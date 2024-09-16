@@ -1,0 +1,90 @@
+FRONT-END DEVELOPMENT
+TASK 1
+ IMAGE GALLERY
+
+HTML:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="stylei.css">
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<div class="gallery">
+		<div class="image-container">
+			<img src="image1.jpg" alt="Image 1">
+		</div>
+		<div class="image-container">
+			<img src="image2.jpg" alt="Image 2">
+		</div>
+		<div class="image-container">
+			<img src="image3.jpg" alt="Image 3">
+		</div>
+		<!-- Add more images here -->
+	</div>
+</body>
+</html>
+
+
+CSS (in stylei.css file):
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.image-container {
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.image-container img:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.image-container {
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.image-container img:hover {
+	transform: scale(1.1);
+}
+
+
